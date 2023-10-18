@@ -1,0 +1,70 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Lambda Architectures
+
+Resources:     
+  MyFunctionPIX86:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 60
+      Runtime: dotnet6
+      MemorySize: 512
+      Architectures:
+        - x86_64    
+      Handler: PIApi::PIApi.Function::FunctionHandler
+      CodeUri: ./src/PIApi/
+      Events:
+        GetX86:
+          Type: Api
+          Properties:
+            Path: /pix86
+            Method: get
+  MyFunctionPIARM:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 60
+      Runtime: dotnet6
+      MemorySize: 512
+      Architectures:
+        - arm64    
+      Handler: PIApi::PIApi.Function::FunctionHandler
+      CodeUri: ./src/PIApi/
+      Events:
+        GetARM:
+          Type: Api
+          Properties:
+            Path: /piarm
+            Method: get
+  MyFunctionEncryptX86:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 60
+      Runtime: dotnet6
+      MemorySize: 512
+      Architectures:
+        - x86_64    
+      Handler: PIApi::PIApi.Function::FunctionHandler
+      CodeUri: ./src/EncryptApi/
+      Events:
+        GetX86:
+          Type: Api
+          Properties:
+            Path: /encryptx86
+            Method: get
+  MyFunctionEncryptARM:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 60
+      Runtime: dotnet6
+      MemorySize: 512
+      Architectures:
+        - arm64    
+      Handler: PIApi::PIApi.Function::FunctionHandler
+      CodeUri: ./src/EncryptApi/
+      Events:
+        GetARM:
+          Type: Api
+          Properties:
+            Path: /encryptarm
+            Method: get

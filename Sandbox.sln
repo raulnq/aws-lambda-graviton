@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PIApi", "src\PIApi\PIApi.csproj", "{4B2BF30C-31FF-4820-88F4-021DBAE30B9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3331C363-E2C4-4D79-A0A7-BD93E41F7D5C}"
+	ProjectSection(SolutionItems) = preProject
+		template.yml = template.yml
+		test.js = test.js
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptApi", "src\EncryptApi\EncryptApi.csproj", "{F3B6B3B6-8553-4B3B-A3D9-0C08404D5D8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B2BF30C-31FF-4820-88F4-021DBAE30B9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B2BF30C-31FF-4820-88F4-021DBAE30B9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B2BF30C-31FF-4820-88F4-021DBAE30B9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B2BF30C-31FF-4820-88F4-021DBAE30B9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3B6B3B6-8553-4B3B-A3D9-0C08404D5D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3B6B3B6-8553-4B3B-A3D9-0C08404D5D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3B6B3B6-8553-4B3B-A3D9-0C08404D5D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3B6B3B6-8553-4B3B-A3D9-0C08404D5D8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {225E7F47-B27E-4361-B77A-AF77C0AB086C}
+	EndGlobalSection
+EndGlobal
